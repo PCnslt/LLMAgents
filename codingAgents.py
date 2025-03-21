@@ -83,7 +83,12 @@ executor = LocalCommandLineCodeExecutor(
     work_dir="coding",
 )
 print(
-    executor.execute_code_blocks(code_blocks=[CodeBlock(language="python", code="import sys; print(sys.executable)")])
+    executor.execute_code_blocks(code_blocks=[
+        CodeBlock(
+            language="python", 
+            code="import sys; print(sys.executable)"
+            )
+        ])
 )
 
 # ---
